@@ -1,4 +1,4 @@
-import { Navbar, Nav, Button, Container, Image } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 import React from "react"
 
 const Welcome = () => (

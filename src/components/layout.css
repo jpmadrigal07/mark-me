@@ -2,6 +2,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #251F47;
+  color: #ffffff;
+}
+
+h1 {
+  font-weight: 600;
 }
 
 .navbar-custom {
@@ -121,3 +127,167 @@ body {
     transform: rotateZ(0);
   }
 }
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.services-image {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+}
+
+.pricing {
+  background-color: #7AE0BB;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 4px solid #7AE0BB;
+}
+
+.pricing.active {
+  border: 4px solid #ffffff;
+}
+
+.anchor-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.anchor-link:hover {
+  color: #7AE0BB;
+}
+
+.footer-link {
+  color: #ffffff;
+}
+
+.footer-link:hover {
+  color: #7AE0BB;
+}
+
+.process-number {
+  border-radius: 50%;
+  padding: 5px 12px;
+  font-weight: bold;
+  background: #7AE0BB;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.process-number-one {
+  border-radius: 50%;
+  padding: 5px 14px;
+  font-weight: bold;
+  background: #7AE0BB;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.pt-8 {
+  margin-top: 150px !important;
+}
+
+.pb-8 {
+  margin-bottom: 150px !important;
+}
+
+.who-we-are-overlay {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/who-we-are.png);
+  background-blend-mode: screen multiply;
+}
+
+.services-overlay {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/services.png);
+  background-blend-mode: screen multiply;
+}
+
+.pricing-overlay {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/pricing.png);
+  background-blend-mode: screen multiply;
+}
+
+.why-us-overlay {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us.png);
+  background-blend-mode: screen multiply;
+}
+
+.process-overlay {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: #341f54;
+}
+
+.why-us-header {
+  margin-top: -80px;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-color: #341f54;
+  /* background-repeat: no-repeat;
+  background-image: url(../images/header-bg.png);
+  background-blend-mode: screen multiply; */
+}
+
+.why-us-section {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.our-services-section {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.how-to-section {
+  padding-top: 130px;
+}
+
+.accordion > .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #341F54;
+  background-clip: border-box;
+  border: 1px solid #251F47;
+  border-radius: .25rem;
+}
+
+.accordion > .card > .card-header > .btn-link {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.accordion > .card > .collapse > .card-body,
+.accordion > .card > .collapsing > .card-body {
+  padding: 15px 30px !important;
+  font-size: 14px;
+  background-color: #494170;
+}
+
+.about-header {
+  margin-top: -80px;
+  padding-top: 150px;
+  padding-bottom: 230px;
+  background-color: #341f54;
+}
+
+.about-section-second {
+  margin-top: -300px;
+}
+

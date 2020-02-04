@@ -12,13 +12,26 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './layout.css'
 
 import Header from "./header"
+import Footer from "./footer"
+import Helmet from "react-helmet"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
+      </Helmet>
       <Header />
         <main>{children}</main>
+      <Footer/>
     </>
   )
 }

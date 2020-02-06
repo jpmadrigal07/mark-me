@@ -5,7 +5,7 @@ import Line from "../components/hr"
 import SEO from "../components/seo"
 
 import Cart from "../images/cart.png"
-import Like from "../images/Like.png"
+import Like from "../images/like.png"
 import Speech from "../images/speech-bubble.png"
 import Happy from "../images/happy.png"
 import Wallet from "../images/wallet.png"

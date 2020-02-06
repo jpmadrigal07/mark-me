@@ -32,6 +32,12 @@ const Header = () => {
     }
   })
 
+  const handleClick = () => {
+      if (typeof window !== 'undefined') {
+          window.location = '/schedule-a-call';
+      }
+  };
+
   return (
     <Navbar className={isOnTop ? "" : "navbar-custom"} expand="lg" sticky="top">
       <Container>
@@ -46,7 +52,7 @@ const Header = () => {
             <Nav.Link href="/our-services" className={isOnTop ? "text-light" : ""}>Our Services</Nav.Link>
             <Nav.Link href="/about" className={isOnTop ? "text-light" : ""}>About</Nav.Link>
             <Nav.Link href="/how-to" className={isOnTop ? "text-light" : ""}>How to</Nav.Link>
-            <Button className="ml-2 wiggle-button" variant="primary"><FA name="phone" /> Schedule a call</Button>
+            <Button onClick={handleClick} className="ml-2 wiggle-button" variant="primary"><FA name="phone" /> Schedule a call</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

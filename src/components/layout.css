@@ -96,7 +96,7 @@ h1 {
   font-weight: bold;
 }
 
-.bg-overlay .welcome-button {
+.welcome-button {
   height: 50px;
   font-size: 20px;
   padding: 0 20px;
@@ -132,10 +132,6 @@ hr.style-two {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-}
-
-.services-image {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
 }
 
 .pricing {
@@ -237,14 +233,27 @@ hr.style-two {
   padding-top: 150px;
   padding-bottom: 80px;
   background-color: #341f54;
-  /* background-repeat: no-repeat;
-  background-image: url(../images/header-bg.png);
-  background-blend-mode: screen multiply; */
 }
 
 .why-us-section {
   padding-top: 130px;
+  padding-bottom: 30px;
+}
+
+.why-us-section-overlay-1 {
+  padding-top: 130px;
   padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us-bg-2.png);
+  background-blend-mode: screen multiply;
+}
+
+.why-us-section-overlay-2 {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us-bg.png);
+  background-blend-mode: screen multiply;
 }
 
 .our-services-section {
@@ -289,5 +298,48 @@ hr.style-two {
 
 .about-section-second {
   margin-top: -300px;
+  padding-bottom: 150px;
 }
+
+.marksmen-overlay {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  /* background-repeat: no-repeat;
+  background-image: url(../images/services.png);
+  background-blend-mode: screen multiply; */
+}
+
+.person-overlay {
+  background-repeat: no-repeat;
+  background-image: url(../images/person-bg.png);
+  background-blend-mode: screen multiply;
+}
+
+.person-info {
+  background: #712086;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.process-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/pricing.png);
+  background-blend-mode: screen multiply;
+}
+
+.get-started-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us.png);
+  background-blend-mode: screen multiply;
+}
+
+.schedule-a-call-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 

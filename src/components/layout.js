@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"
         />
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Helmet>
       <Header />
         <main>{children}</main>

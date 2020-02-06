@@ -17,7 +17,9 @@ import Helmet from "react-helmet"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init();
+if (typeof window !== "undefined" && window.document) {
+  AOS.init();
+}
 
 const Layout = ({ children }) => {
 

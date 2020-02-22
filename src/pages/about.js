@@ -14,6 +14,17 @@ import { Container, Row, Col, Image, Button, Nav, Table } from "react-bootstrap"
 import ReactApexChart from "react-apexcharts"
 
 const About = () => {
+
+  const [isVideo, setIsVideo] = useState(true)
+
+  const handleClickProcessTimeline = () => {
+    if (isVideo) {
+      setIsVideo(false)
+    } else {
+      setIsVideo(true)
+    }
+  }
+
   const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
   const myRef = useRef(null)
 
@@ -246,6 +257,24 @@ const About = () => {
               </p>
             </Col>
           </Row>
+          <Row  className="pt-3 pb-3">
+            <Col className="text-center">
+              <Button
+                variant="primary"
+                className={isVideo ? 'selected-box' : ''}
+                onClick={handleClickProcessTimeline}
+              >
+                Video
+              </Button>
+              <Button
+                variant="primary"
+                className={isVideo ? '' : 'selected-box'}
+                onClick={handleClickProcessTimeline}
+              >
+                Photography
+              </Button>
+            </Col>
+          </Row>
           <Row
             data-aos="fade-down"
             data-aos-delay="50"
@@ -334,55 +363,7 @@ const About = () => {
             </Col>
           </Row>
           <Row className="pt-2 pb-5">
-            <Col className="person-overlay">
-              <Image
-                src={SamplePerson}
-                fluid
-                className="marksmen-image"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-              />
-              <div
-                className="person-info"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-              >
-                <h3
-                  className="text-center"
-                  style={{ fontWeight: "bold", marginBottom: "0px" }}
-                >
-                  Rie Serrena
-                </h3>
-                <p className="text-center font-italic">Founder, CEO</p>
-              </div>
-            </Col>
-            <Col className="person-overlay">
-              <Image
-                src={SamplePerson}
-                fluid
-                className="marksmen-image"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-              />
-              <div
-                className="person-info"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-              >
-                <h3
-                  className="text-center"
-                  style={{ fontWeight: "bold", marginBottom: "0px" }}
-                >
-                  Rie Serrena
-                </h3>
-                <p className="text-center font-italic">Founder, CEO</p>
-              </div>
-            </Col>
-            <Col className="person-overlay">
+            <Col className="person-overlay" md={{ span: 4, offset: 4 }}>
               <Image
                 src={SamplePerson}
                 fluid
@@ -408,7 +389,7 @@ const About = () => {
             </Col>
           </Row>
           <Row className="pt-2 pb-5">
-            <Col className="person-overlay">
+            <Col className="person-overlay" md={{ span: 4, offset: 4 }}>
               <Image
                 src={SamplePerson}
                 fluid
@@ -427,12 +408,14 @@ const About = () => {
                   className="text-center"
                   style={{ fontWeight: "bold", marginBottom: "0px" }}
                 >
-                  Rie Serrena
+                  Thea Legazpi
                 </h3>
-                <p className="text-center font-italic">Founder, CEO</p>
+                <p className="text-center font-italic">Executive Project Manager</p>
               </div>
             </Col>
-            <Col className="person-overlay">
+          </Row>
+          <Row className="pt-2 pb-5">
+            <Col className="person-overlay-small">
               <Image
                 src={SamplePerson}
                 fluid
@@ -451,12 +434,12 @@ const About = () => {
                   className="text-center"
                   style={{ fontWeight: "bold", marginBottom: "0px" }}
                 >
-                  Rie Serrena
+                  Justin Allarde
                 </h3>
-                <p className="text-center font-italic">Founder, CEO</p>
+                <p className="text-center font-italic">Head Video Editor</p>
               </div>
             </Col>
-            <Col className="person-overlay">
+            <Col className="person-overlay-small">
               <Image
                 src={SamplePerson}
                 fluid
@@ -475,9 +458,57 @@ const About = () => {
                   className="text-center"
                   style={{ fontWeight: "bold", marginBottom: "0px" }}
                 >
-                  Rie Serrena
+                  Kristoffer Brazil
                 </h3>
-                <p className="text-center font-italic">Founder, CEO</p>
+                <p className="text-center font-italic">Production Assistant</p>
+              </div>
+            </Col>
+            <Col className="person-overlay-small">
+              <Image
+                src={SamplePerson}
+                fluid
+                className="marksmen-image"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+              <div
+                className="person-info"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <h3
+                  className="text-center"
+                  style={{ fontWeight: "bold", marginBottom: "0px" }}
+                >
+                  UP Lee
+                </h3>
+                <p className="text-center font-italic">Head Videographer</p>
+              </div>
+            </Col>
+            <Col className="person-overlay-small">
+              <Image
+                src={SamplePerson}
+                fluid
+                className="marksmen-image"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+              <div
+                className="person-info"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <h3
+                  className="text-center"
+                  style={{ fontWeight: "bold", marginBottom: "0px" }}
+                >
+                  MD Madrigal
+                </h3>
+                <p className="text-center font-italic">Director of Photography</p>
               </div>
             </Col>
           </Row>

@@ -55,7 +55,6 @@ const ScheduleACall = () => {
           </Row>
         </Container>
       </section>
-      <GetStarted />
       <Line />
     </Layout>
   )

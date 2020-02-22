@@ -39,28 +39,26 @@ h1 {
 
 .btn-primary:focus,
 .btn-primary.focus {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-  color: #ffffff;
-  background-color: #5f1a71;
-  border-color: #5f1a71;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show>.btn-primary.dropdown-toggle {
-  color: #ffffff;
   background-color: #9433ad;
-  border-color: #9433ad
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #9433ad;
+  border-color: #9433ad;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #9433ad;
+  border-color: #9433ad;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -69,7 +67,7 @@ h1 {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #7AE0BB;
+  color: #9433ad;
 }
 
 .wiggle-button {
@@ -269,6 +267,17 @@ hr.style-two {
 .our-services-section {
   padding-top: 130px;
   padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us-bg.png);
+  background-blend-mode: screen multiply;
+}
+
+.our-services-section-2 {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us-bg-2.png);
+  background-blend-mode: screen multiply;
 }
 
 .how-to-section {
@@ -322,6 +331,12 @@ hr.style-two {
 .person-overlay {
   background-repeat: no-repeat;
   background-image: url(../images/person-bg.png);
+  background-blend-mode: screen multiply;
+}
+
+.person-overlay-small {
+  background-repeat: no-repeat;
+  background-image: url(../images/person-small-bg.png);
   background-blend-mode: screen multiply;
 }
 
@@ -724,3 +739,17 @@ hr.style-two {
   background: #f3f3f3;
   color: #251F47;
 }
+
+.services-video {
+  background-color: #251F47;
+  padding: 30px 30px;
+}
+
+.services-box {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.selected-box {
+  background-color: #9433ad;
+}
+

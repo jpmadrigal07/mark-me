@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from "react"
+import React, { useRef, useEffect, useState } from "react"
 
 import Layout from "../components/layout"
 import Line from "../components/hr"
@@ -9,19 +9,161 @@ import GetStarted from "../components/get-started"
 import AboutHeaderImage from "../images/about-header-image.png"
 import ProcessPoint from "../images/process.png"
 
-import { Container, Row, Col, Image, Button, Nav } from "react-bootstrap"
+import { Container, Row, Col, Image, Button, Nav, Table } from "react-bootstrap"
+
+import ReactApexChart from "react-apexcharts"
 
 const About = () => {
-
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)   
+  const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
   const myRef = useRef(null)
 
   useEffect(() => {
-    if(window.location.href.includes("our-process")) {
+    if (window.location.href.includes("our-process")) {
       scrollToRef(myRef)
     }
   })
-  
+
+  const series = [
+    {
+      name: "Tier I",
+      data: [1, 5, 3, 2, 5, 3, 1],
+    },
+    {
+      name: "Tier II",
+      data: [1, 3, 3, 2, 5, 3, 1],
+    },
+    {
+      name: "Tier III",
+      data: [1, 2, 2, 2, 3, 2, 1],
+    },
+  ]
+
+  const options = {
+    chart: {
+      type: "line",
+      foreColor: "#FFFFFF",
+      toolbar: {
+        show: false,
+      },
+      zoom: {
+        enabled: false,
+      },
+      animations: {
+        enabled: true,
+        easing: "easeinout",
+        speed: 1500,
+        animateGradually: {
+          enabled: true,
+          delay: 500,
+        },
+        dynamicAnimation: {
+          enabled: true,
+          speed: 500,
+        },
+      },
+    },
+    stroke: {
+      width: [4, 4, 4],
+    },
+    markers: {
+      size: 7,
+      colors: undefined,
+      strokeColors: "#fff",
+      strokeWidth: 3,
+      strokeOpacity: 0.9,
+      strokeDashArray: 0,
+      fillOpacity: 1,
+      discrete: [],
+      shape: "circle",
+      radius: 2,
+      offsetX: 0,
+      offsetY: 0,
+      onClick: undefined,
+      onDblClick: undefined,
+      hover: {
+        size: undefined,
+        sizeOffset: 3,
+      },
+    },
+    xaxis: {
+      categories: [
+        "Assessment",
+        "Writing",
+        "Sourcing",
+        "Filming",
+        "Editing",
+        "Polishing",
+        "Turnonver",
+      ],
+      labels: {
+        style: {
+          colors: "#FFFFFF",
+          fontSize: "14px",
+          fontFamily: "Poppins",
+        },
+      },
+    },
+    yaxis: [
+      {
+        labels: {
+          style: {
+            colors: "#FFFFFF",
+            fontSize: "14px",
+          },
+        },
+        title: {
+          text: "Days",
+          style: {
+            color: "#FFFFFF",
+            fontSize: "18px",
+            fontFamily: "Poppins",
+          },
+        },
+      },
+    ],
+    tooltip: {
+      enabled: true,
+      enabledOnSeries: undefined,
+      shared: true,
+      followCursor: false,
+      intersect: false,
+      inverseOrder: false,
+      custom: undefined,
+      fillSeriesColor: false,
+      theme: true,
+      style: {
+        fontSize: "12px",
+        fontFamily: "Poppins",
+      },
+      onDatasetHover: {
+        highlightDataSeries: false,
+      },
+      x: {
+        show: true,
+        format: "dd MMM",
+        formatter: undefined,
+      },
+      y: {
+        formatter: undefined,
+      },
+      z: {
+        formatter: undefined,
+        title: "Size: ",
+      },
+      marker: {
+        show: true,
+      },
+      fixed: {
+        enabled: false,
+        position: "topRight",
+        offsetX: 0,
+        offsetY: 0,
+      },
+    },
+
+    colors: ["#9D9AAC", "#712086", "#7AE0BB"],
+  }
+
   return (
     <Layout>
       <SEO title="About" />
@@ -68,20 +210,20 @@ const About = () => {
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 nec mattis nisl. Praesent id elit eu leo dapibus tempor. Nullam
-                fringilla condimentum sapien et bibendum. Integer interdum purus a
-                porta lacinia. Morbi eros nisi, mollis quis nulla at, sodales
-                faucibus massa. Etiam pharetra convallis velit, in malesuada nunc
-                fermentum a. Ut nec justo finibus diam venenatis tincidunt vel sit
-                amet sapien. Integer placerat orci neque, eu hendrerit magna
-                luctus sit amet.
+                fringilla condimentum sapien et bibendum. Integer interdum purus
+                a porta lacinia. Morbi eros nisi, mollis quis nulla at, sodales
+                faucibus massa. Etiam pharetra convallis velit, in malesuada
+                nunc fermentum a. Ut nec justo finibus diam venenatis tincidunt
+                vel sit amet sapien. Integer placerat orci neque, eu hendrerit
+                magna luctus sit amet.
                 <br />
                 <br />
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
                 nibh ipsum. Morbi gravida ornare erat, vitae viverra nibh dictum
                 et. Vivamus turpis lectus sollicitudin id ultricies vitae,
-                suscipit ac libero. Morbi gravida ornare erat, vitae viverra nibh
-                dictum et. Vivamus turpis lectus sollicitudin id ultricies vitae,
-                suscipit ac libero.
+                suscipit ac libero. Morbi gravida ornare erat, vitae viverra
+                nibh dictum et. Vivamus turpis lectus sollicitudin id ultricies
+                vitae, suscipit ac libero.
               </p>
             </Col>
           </Row>
@@ -90,121 +232,82 @@ const About = () => {
 
       <section className="process-section" id="our-process" ref={myRef}>
         <Container>
-          <Row data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+          <Row
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <Col>
               <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
-                The process is the most important thing in a business.
-                <br />
-                So, we are glad to share to you our process.
+                Process & Timeline.
               </h2>
+              <p className="text-center" style={{ fontSize: "12px" }}>
+                The process is the most important thing in a business.
+              </p>
             </Col>
           </Row>
-          <Row className="pt-5">
+          <Row
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            className="pb-5"
+          >
             <Col>
-              <Row
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <Col style={{ paddingRight: "0px" }}>
-                  <Image src={ProcessPoint} fluid />
-                </Col>
-                <Col xs={10} style={{ paddingLeft: "0px" }}>
-                  <p>
-                    Are you struggling to convert your website visitors into new
-                    clients? Are you struggling to convert your website visitors
-                    into new clients? Are you struggling to convert your website
-                    visitors into new clients?
-                  </p>
-                </Col>
-              </Row>
-              <Row
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <Col style={{ paddingRight: "0px" }}>
-                  <Image src={ProcessPoint} fluid />
-                </Col>
-                <Col xs={10} style={{ paddingLeft: "0px" }}>
-                  <p>
-                    Are you struggling to convert your website visitors into new
-                    clients? Are you struggling to convert your website visitors
-                    into new clients? Are you struggling to convert your website
-                    visitors into new clients?
-                  </p>
-                </Col>
-              </Row>
-              <Row
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <Col style={{ paddingRight: "0px" }}>
-                  <Image src={ProcessPoint} fluid />
-                </Col>
-                <Col xs={10} style={{ paddingLeft: "0px" }}>
-                  <p>
-                    Are you struggling to convert your website visitors into new
-                    clients? Are you struggling to convert your website visitors
-                    into new clients? Are you struggling to convert your website
-                    visitors into new clients?
-                  </p>
-                </Col>
-              </Row>
+              <div id="chart">
+                <ReactApexChart
+                  options={options}
+                  series={series}
+                  type="line"
+                  height={500}
+                />
+              </div>
             </Col>
+          </Row>
+          <Row
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <Col>
-              <Row
-                data-aos="fade-right"
-                data-aos-delay="200"
+              <Table striped bordered hover variant="dark">
+                <thead>
+                  <tr>
+                    <th>Tier</th>
+                    <th>Allowance Time</th>
+                    <th>Turn-around time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tier I - Setup</td>
+                    <td>1</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Tier II - Standard</td>
+                    <td>1</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <td>Tier III - Specialized</td>
+                    <td>2</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="text-center mt-5">
+              <Button
+                variant="primary"
+                className="wiggle-button"
+                data-aos="fade-down"
+                data-aos-delay="1000"
                 data-aos-duration="1000"
               >
-                <Col style={{ paddingRight: "0px" }}>
-                  <Image src={ProcessPoint} fluid />
-                </Col>
-                <Col xs={10} style={{ paddingLeft: "0px" }}>
-                  <p>
-                    Are you struggling to convert your website visitors into new
-                    clients? Are you struggling to convert your website visitors
-                    into new clients? Are you struggling to convert your website
-                    visitors into new clients?
-                  </p>
-                </Col>
-              </Row>
-              <Row
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <Col style={{ paddingRight: "0px" }}>
-                  <Image src={ProcessPoint} fluid />
-                </Col>
-                <Col xs={10} style={{ paddingLeft: "0px" }}>
-                  <p>
-                    Are you struggling to convert your website visitors into new
-                    clients? Are you struggling to convert your website visitors
-                    into new clients? Are you struggling to convert your website
-                    visitors into new clients?
-                  </p>
-                </Col>
-              </Row>
-              <Row
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <Col style={{ paddingRight: "0px" }}>
-                  <Image src={ProcessPoint} fluid />
-                </Col>
-                <Col xs={10} style={{ paddingLeft: "0px" }}>
-                  <p>
-                    Are you struggling to convert your website visitors into new
-                    clients? Are you struggling to convert your website visitors
-                    into new clients? Are you struggling to convert your website
-                    visitors into new clients?
-                  </p>
-                </Col>
-              </Row>
+                Claim free brand assessment
+              </Button>
             </Col>
           </Row>
         </Container>
@@ -223,7 +326,7 @@ const About = () => {
                 className="text-center"
                 style={{ marginBottom: "0px", fontWeight: "bold" }}
               >
-                The Marksmen.
+                The Digital Marksmen.
               </h1>
               <p className="text-center" style={{ fontSize: "12px" }}>
                 Lorem ipsum dolor sit ame lorem ipsum dolor sit ame
@@ -384,7 +487,6 @@ const About = () => {
       <Line />
     </Layout>
   )
-
 }
 
 export default About

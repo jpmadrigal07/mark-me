@@ -11,6 +11,8 @@ import Happy from "../images/happy.png"
 import Wallet from "../images/wallet.png"
 import GetStarted from "../components/get-started"
 
+import ProcessPoint from "../images/who-we-are-image.png"
+
 import { Container, Row, Col, Image, Button, Nav } from "react-bootstrap"
 
 const WhyUs = () => (
@@ -20,7 +22,14 @@ const WhyUs = () => (
       <Container>
         <Row>
           <Col>
-            <h2 style={{ textAlign: "center", fontWeight: "bold" }}>Why Us</h2>
+            <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
+              <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
+              Why Us
+            </h2>
             <p style={{ fontSize: "12px", textAlign: "center" }}>
               Explanation why you need to choose us
             </p>
@@ -36,22 +45,23 @@ const WhyUs = () => (
               src={Wallet}
               fluid
               data-aos="fade-right"
-              data-aos-delay="50"
+              data-aos-delay="650"
               data-aos-duration="1000"
             />
           </Col>
           <Col>
             <h1
-              style={{fontWeight: 'bold'}}
-              data-aos="fade-down"
+              style={{ fontWeight: "bold" }}
+              data-aos="fade-right"
               data-aos-delay="50"
               data-aos-duration="1000"
             >
+              <Image src={ProcessPoint} fluid style={{ fontWeight: "bold" }} />{" "}
               Affordable
             </h1>
             <p
               data-aos="fade-down"
-              data-aos-delay="50"
+              data-aos-delay="350"
               data-aos-duration="1000"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -81,11 +91,12 @@ const WhyUs = () => (
         <Row>
           <Col>
             <h1
-              style={{fontWeight: 'bold'}}
-              data-aos="fade-down"
-              data-aos-delay="50"
+              style={{ fontWeight: "bold" }}
+              data-aos="fade-left"
+              data-aos-delay="350"
               data-aos-duration="1000"
             >
+              <Image src={ProcessPoint} fluid style={{ fontWeight: "bold" }} />{" "}
               Efficient
             </h1>
             <p
@@ -106,7 +117,7 @@ const WhyUs = () => (
               className="mt-3"
               variant="primary"
               data-aos="fade-down"
-              data-aos-delay="50"
+              data-aos-delay="350"
               data-aos-duration="1000"
             >
               Learn More
@@ -117,7 +128,7 @@ const WhyUs = () => (
               src={Cart}
               fluid
               data-aos="fade-right"
-              data-aos-delay="50"
+              data-aos-delay="650"
               data-aos-duration="1000"
             />
           </Col>
@@ -132,22 +143,23 @@ const WhyUs = () => (
               src={Happy}
               fluid
               data-aos="fade-right"
-              data-aos-delay="50"
+              data-aos-delay="650"
               data-aos-duration="1000"
             />
           </Col>
           <Col>
             <h1
-              style={{fontWeight: 'bold'}}
-              data-aos="fade-down"
+              style={{ fontWeight: "bold" }}
+              data-aos="fade-right"
               data-aos-delay="50"
               data-aos-duration="1000"
             >
+              <Image src={ProcessPoint} fluid style={{ fontWeight: "bold" }} />{" "}
               Convenient
             </h1>
             <p
               data-aos="fade-down"
-              data-aos-delay="50"
+              data-aos-delay="350"
               data-aos-duration="1000"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -177,16 +189,17 @@ const WhyUs = () => (
         <Row>
           <Col>
             <h1
-              style={{fontWeight: 'bold'}}
-              data-aos="fade-down"
+              style={{ fontWeight: "bold" }}
+              data-aos="fade-left"
               data-aos-delay="50"
               data-aos-duration="1000"
             >
+              <Image src={ProcessPoint} fluid style={{ fontWeight: "bold" }} />{" "}
               Responsive
             </h1>
             <p
               data-aos="fade-down"
-              data-aos-delay="50"
+              data-aos-delay="350"
               data-aos-duration="1000"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -213,7 +226,7 @@ const WhyUs = () => (
               src={Speech}
               fluid
               data-aos="fade-right"
-              data-aos-delay="50"
+              data-aos-delay="650"
               data-aos-duration="1000"
             />
           </Col>
@@ -228,22 +241,23 @@ const WhyUs = () => (
               src={Like}
               fluid
               data-aos="fade-right"
-              data-aos-delay="50"
+              data-aos-delay="650"
               data-aos-duration="1000"
             />
           </Col>
           <Col>
             <h1
-              style={{fontWeight: 'bold'}}
-              data-aos="fade-down"
+              style={{ fontWeight: "bold" }}
+              data-aos="fade-right"
               data-aos-delay="50"
               data-aos-duration="1000"
             >
+              <Image src={ProcessPoint} fluid style={{ fontWeight: "bold" }} />{" "}
               Effective
             </h1>
             <p
               data-aos="fade-down"
-              data-aos-delay="50"
+              data-aos-delay="350"
               data-aos-duration="1000"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque

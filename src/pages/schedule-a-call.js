@@ -6,7 +6,9 @@ import SEO from "../components/seo"
 
 import GetStarted from "../components/get-started"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
+
+import ProcessPoint from "../images/who-we-are-image.png"
 
 const ScheduleACall = () => {
 
@@ -27,6 +29,11 @@ const ScheduleACall = () => {
           <Row>
             <Col>
               <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
+              <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
                 Schedule a Call
               </h2>
               <p style={{ fontSize: "12px", textAlign: "center" }}>
@@ -41,7 +48,7 @@ const ScheduleACall = () => {
           <Row
             data-aos="fade-up"
             data-aos-delay="1000"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Col>
               <div id="schedule_form">
@@ -55,7 +62,6 @@ const ScheduleACall = () => {
           </Row>
         </Container>
       </section>
-      <GetStarted />
       <Line />
     </Layout>
   )

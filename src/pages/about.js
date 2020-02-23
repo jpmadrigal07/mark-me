@@ -9,8 +9,9 @@ import GetStarted from "../components/get-started"
 import AboutHeaderImage from "../images/about-header-image.png"
 
 import { Container, Row, Col, Image, Button, Table } from "react-bootstrap"
+import Loadable from '@loadable/component'
 
-import ReactApexChart from "react-apexcharts"
+const LoadableChart = Loadable(() => import('react-apexcharts'))
 
 const About = () => {
 
@@ -174,6 +175,17 @@ const About = () => {
     colors: ["#9D9AAC", "#712086", "#7AE0BB"],
   }
 
+  const ComponentWithChart = (options, series) => (
+    <>
+      <LoadableChart  
+          options={options} 
+          series={series} 
+          type="line"
+          height={500}
+      />
+    </>
+  )
+
   return (
     <Layout>
       <SEO title="About" />
@@ -286,12 +298,13 @@ const About = () => {
           >
             <Col>
               <div id="chart">
-                <ReactApexChart
+                {/* <ReactApexChart
                   options={options}
                   series={series}
                   type="line"
                   height={500}
-                />
+                /> */}
+                {ComponentWithChart(options, series)}
               </div>
             </Col>
           </Row>

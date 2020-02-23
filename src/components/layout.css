@@ -109,23 +109,23 @@ h1 {
   }
 
   15% {
-    transform: rotateZ(-15deg);
+    transform: rotateZ(-3deg);
   }
 
   20% {
-    transform: rotateZ(10deg);
+    transform: rotateZ(0deg);
   }
 
   25% {
-    transform: rotateZ(-10deg);
+    transform: rotateZ(-3deg);
   }
 
   30% {
-    transform: rotateZ(6deg);
+    transform: rotateZ(-3deg);
   }
 
   35% {
-    transform: rotateZ(-4deg);
+    transform: rotateZ(2deg);
   }
 
   40%,
@@ -196,40 +196,40 @@ hr.style-two {
 }
 
 .who-we-are-overlay {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url(../images/who-we-are.png);
   background-blend-mode: screen multiply;
 }
 
 .services-overlay {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url(../images/services.png);
   background-blend-mode: screen multiply;
 }
 
 .pricing-overlay {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url(../images/pricing.png);
   background-blend-mode: screen multiply;
 }
 
 .why-us-overlay {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url(../images/why-us.png);
   background-blend-mode: screen multiply;
 }
 
 .process-overlay {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #341f54;
   background-repeat: no-repeat;
   background-image: url(../images/process-bg.png);
@@ -238,18 +238,20 @@ hr.style-two {
 
 .why-us-header {
   margin-top: -80px;
-  padding-top: 150px;
+  padding-top: 130px;
   padding-bottom: 80px;
-  background-color: #341f54;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us-header-bg.png);
+  background-blend-mode: screen multiply;
 }
 
 .why-us-section {
-  padding-top: 130px;
+  padding-top: 80px;
   padding-bottom: 30px;
 }
 
 .why-us-section-overlay-1 {
-  padding-top: 130px;
+  padding-top: 80px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-image: url(../images/why-us-bg-2.png);
@@ -257,7 +259,7 @@ hr.style-two {
 }
 
 .why-us-section-overlay-2 {
-  padding-top: 130px;
+  padding-top: 80px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-image: url(../images/why-us-bg.png);
@@ -265,7 +267,7 @@ hr.style-two {
 }
 
 .our-services-section {
-  padding-top: 130px;
+  padding-top: 80px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-image: url(../images/why-us-bg.png);
@@ -273,7 +275,7 @@ hr.style-two {
 }
 
 .our-services-section-2 {
-  padding-top: 130px;
+  padding-top: 80px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-image: url(../images/why-us-bg-2.png);
@@ -281,7 +283,7 @@ hr.style-two {
 }
 
 .how-to-section {
-  padding-top: 130px;
+  padding-top: 80px;
 }
 
 .accordion>.card {
@@ -310,19 +312,19 @@ hr.style-two {
 
 .about-header {
   margin-top: -80px;
-  padding-top: 150px;
+  padding-top: 130px;
   padding-bottom: 230px;
   background-color: #341f54;
 }
 
 .about-section-second {
   margin-top: -300px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .marksmen-overlay {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   /* background-repeat: no-repeat;
   background-image: url(../images/services.png);
   background-blend-mode: screen multiply; */
@@ -347,16 +349,16 @@ hr.style-two {
 }
 
 .process-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url(../images/pricing.png);
   background-blend-mode: screen multiply;
 }
 
 .get-started-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-image: url(../images/why-us.png);
   background-blend-mode: screen multiply;

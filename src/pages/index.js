@@ -81,23 +81,25 @@ const IndexPage = () => {
         <Container>
           <Row
             className="pb-5"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
           >
             <Col>
-              <h1>
+              <h1
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="800"
+              >
                 <Image
                   src={ProcessPoint}
                   fluid
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
                   style={{ fontWeight: "bold" }}
                 />{" "}
-                Who we are.
+                <span style={{fontSize: '80px', position: 'absolute', top: '-20px'}}>W</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ho we are.
               </h1>
-              <p>
+              <p
+                data-aos="fade-down"
+                data-aos-delay="350"
+                data-aos-duration="800"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
                 nibh ipsum. Morbi gravida ornare erat, vitae viverra nibh dictum
                 et. Vivamus turpis lectus sollicitudin id ultricies vitae,
@@ -109,23 +111,26 @@ const IndexPage = () => {
           </Row>
           <Row
             className="pt-5"
-            data-aos="fade-down"
-            data-aos-delay="400"
-            data-aos-duration="1000"
           >
             <Col>
-              <h1 className="text-right">
+              <h1 
+                className="text-right"
+                data-aos="fade-right"
+                data-aos-delay="650"
+                data-aos-duration="800"
+                >
                 <Image
                   src={ProcessPoint}
                   fluid
-                  data-aos="fade-right"
-                  data-aos-delay="550"
-                  data-aos-duration="1000"
                   style={{ fontWeight: "bold" }}
                 />{" "}
-                Why work with us.
+                <span style={{fontSize: '80px', position: 'absolute', top: '-20px'}}>W</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hy work with us.
               </h1>
-              <p className="text-right">
+              <p 
+              className="text-right"
+              data-aos="fade-down"
+              data-aos-delay="950"
+              data-aos-duration="800">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
                 nibh ipsum. Morbi gravida ornare erat, vitae viverra nibh dictum
                 et. Vivamus turpis lectus sollicitudin id ultricies vitae,
@@ -141,18 +146,28 @@ const IndexPage = () => {
         <Container>
           <Row
             className="pb-2"
-            data-aos="fade-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
           >
             <Col>
               <h1
                 className="text-center"
                 style={{ marginBottom: "0px", fontWeight: "bold" }}
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="800"
               >
+                              <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
                 Our Services.
               </h1>
-              <p className="text-center" style={{ fontSize: "12px" }}>
+              <p 
+              className="text-center" style={{ fontSize: "12px" }}
+              data-aos="fade-left"
+              data-aos-delay="350"
+              data-aos-duration="800"
+              >
                 We specialized in these two field
               </p>
             </Col>
@@ -164,8 +179,8 @@ const IndexPage = () => {
               md={6}
               lg={6}
               data-aos="fade-left"
-              data-aos-delay="50"
-              data-aos-duration="1000"
+              data-aos-delay="650"
+              data-aos-duration="800"
             >
               <Row>
                 <Col>
@@ -210,8 +225,8 @@ const IndexPage = () => {
                     className="ml-2 wiggle-button"
                     variant="primary"
                     data-aos="fade-down"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
+                    data-aos-delay="650"
+                    data-aos-duration="800"
                     onClick={handleClickOurServices}
                   >
                     Learn More
@@ -224,8 +239,8 @@ const IndexPage = () => {
               md={6}
               lg={6}
               data-aos="fade-right"
-              data-aos-delay="50"
-              data-aos-duration="1000"
+              data-aos-delay="650"
+              data-aos-duration="800"
             >
               <Row>
                 <Col>
@@ -257,8 +272,8 @@ const IndexPage = () => {
                     className="ml-2 wiggle-button"
                     variant="primary"
                     data-aos="fade-down"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
+                    data-aos-delay="650"
+                    data-aos-duration="800"
                     onClick={handleClickOurServices}
                   >
                     Learn More
@@ -273,18 +288,27 @@ const IndexPage = () => {
         <Container>
           <Row
             className="pb-2"
-            data-aos="fade-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
           >
             <Col>
               <h1
                 className="text-center"
                 style={{ marginBottom: "0px", fontWeight: "bold" }}
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="800"
               >
+                              <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
                 Pricing & Tiers.
               </h1>
-              <p className="text-center" style={{ fontSize: "12px" }}>
+              <p 
+              className="text-center" style={{ fontSize: "12px" }}
+              data-aos="fade-left"
+              data-aos-delay="350"
+              data-aos-duration="800">
                 Great value at an affordable cost
               </p>
             </Col>
@@ -294,8 +318,8 @@ const IndexPage = () => {
               <div
                 className="pricing"
                 data-aos="fade-left"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-delay="650"
+                data-aos-duration="800"
                 style={{ marginRight: "15px" }}
               >
                 <div class="ribbon ribbon-top-left">
@@ -320,8 +344,8 @@ const IndexPage = () => {
               <div
                 className="pricing"
                 data-aos="fade-right"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-delay="650"
+                data-aos-duration="800"
                 style={{ marginLeft: "15px" }}
               >
                 <div class="ribbon ribbon-top-right">
@@ -409,65 +433,9 @@ const IndexPage = () => {
                 className="ml-2"
                 variant="primary"
                 data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-delay="650"
+                data-aos-duration="800"
                 onClick={handleClickPricing}
-              >
-                Learn More
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className="why-us-overlay">
-        <Container>
-          <Row
-            className="pb-2"
-            data-aos="fade-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-          >
-            <Col>
-              <h1
-                className="text-center"
-                style={{
-                  marginBottom: "0px",
-                  fontWeight: "bold",
-                  fontSize: "70px",
-                }}
-              >
-                Why Us?
-              </h1>
-            </Col>
-          </Row>
-          <Row className="pt-2 pb-5">
-            <Col
-              data-aos="fade-left"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-            >
-              <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                nibh ipsum. Morbi gravida ornare erat, vitae viverra nibh dictum
-                et. Vivamus turpis lectus sollicitudin id ultricies vitae,
-                suscipit ac libero. Morbi gravida ornare erat, vitae viverra
-                nibh dictum et. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Duis at nibh ipsum.{" "}
-                <a href="/why-us" className="anchor-link">
-                  Learn More.
-                </a>
-              </p>
-            </Col>
-          </Row>
-          <Row className="pb-5">
-            <Col className="text-center">
-              <Button
-                className="ml-2"
-                variant="primary"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                onClick={handleClickWhyUs}
               >
                 Learn More
               </Button>
@@ -482,13 +450,22 @@ const IndexPage = () => {
               <h1
                 className="text-center"
                 style={{ marginBottom: "0px", fontWeight: "bold" }}
-                data-aos="fade-down"
+                data-aos="fade-left"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
+                 <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
                 Our Process.
               </h1>
-              <p className="text-center" style={{ fontSize: "12px" }}>
+              <p 
+              className="text-center" style={{ fontSize: "12px" }}
+              data-aos="fade-left"
+              data-aos-delay="350"
+              data-aos-duration="800">
                 Great value at an affordable cost
               </p>
             </Col>
@@ -511,7 +488,7 @@ const IndexPage = () => {
                       className="timeline-detail"
                       data-aos="fade-down"
                       data-aos-delay="50"
-                      data-aos-duration="1000"
+                      data-aos-duration="800"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
@@ -535,7 +512,7 @@ const IndexPage = () => {
                       className="timeline-detail"
                       data-aos="fade-down"
                       data-aos-delay="350"
-                      data-aos-duration="1000"
+                      data-aos-duration="800"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
@@ -559,7 +536,7 @@ const IndexPage = () => {
                       className="timeline-detail"
                       data-aos="fade-down"
                       data-aos-delay="700"
-                      data-aos-duration="1000"
+                      data-aos-duration="800"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
@@ -585,7 +562,7 @@ const IndexPage = () => {
                       className="timeline-detail"
                       data-aos="fade-down"
                       data-aos-delay="1050"
-                      data-aos-duration="1000"
+                      data-aos-duration="800"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
@@ -609,7 +586,7 @@ const IndexPage = () => {
                       className="timeline-detail"
                       data-aos="fade-down"
                       data-aos-delay="1350"
-                      data-aos-duration="1000"
+                      data-aos-duration="800"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
@@ -633,7 +610,7 @@ const IndexPage = () => {
                       className="timeline-detail"
                       data-aos="fade-down"
                       data-aos-delay="1700"
-                      data-aos-duration="1000"
+                      data-aos-duration="800"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
@@ -653,7 +630,7 @@ const IndexPage = () => {
                 variant="primary"
                 data-aos="fade-down"
                 data-aos-delay="1550"
-                data-aos-duration="1000"
+                data-aos-duration="800"
                 onClick={handleClickOurProcess}
               >
                 Learn More

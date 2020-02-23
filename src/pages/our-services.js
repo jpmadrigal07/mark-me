@@ -10,6 +10,9 @@ import GetStarted from "../components/get-started"
 import Video1 from "../images/video-1.png"
 import Image2 from "../images/image-2.png"
 
+import ProcessPoint from "../images/who-we-are-image.png"
+
+
 import { Container, Row, Col, Image, Button, Nav } from "react-bootstrap"
 
 const OurServices = () => (
@@ -20,6 +23,11 @@ const OurServices = () => (
         <Row>
           <Col>
             <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
+            <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
               Our Services
             </h2>
             <p style={{ fontSize: "12px", textAlign: "center" }}>
@@ -38,7 +46,7 @@ const OurServices = () => (
             lg={12}
             data-aos="fade-down"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <h1 className="text-center">Video</h1>
           </Col>
@@ -50,7 +58,7 @@ const OurServices = () => (
             lg={4}
             data-aos="fade-down"
             data-aos-delay="350"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Row className="pt-3">
               <Col>
@@ -98,7 +106,7 @@ const OurServices = () => (
             lg={4}
             data-aos="fade-down"
             data-aos-delay="650"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Row className="pt-3">
               <Col>
@@ -146,7 +154,7 @@ const OurServices = () => (
             lg={4}
             data-aos="fade-down"
             data-aos-delay="950"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Row className="pt-3">
               <Col>
@@ -189,6 +197,19 @@ const OurServices = () => (
             </Row>
           </Col>
         </Row>
+        <Row>
+            <Col className="text-center mt-3">
+              <Button
+                variant="primary"
+                className="wiggle-button"
+                data-aos="fade-down"
+                data-aos-delay="1000"
+                data-aos-duration="800"
+              >
+                Claim free brand assessment
+              </Button>
+            </Col>
+          </Row>
       </Container>
     </section>
     <section class="our-services-section-2">
@@ -200,7 +221,7 @@ const OurServices = () => (
             lg={12}
             data-aos="fade-down"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <h1 className="text-center">Photography</h1>
           </Col>
@@ -212,7 +233,7 @@ const OurServices = () => (
             lg={4}
             data-aos="fade-down"
             data-aos-delay="350"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Row className="pt-3">
               <Col>
@@ -247,7 +268,7 @@ const OurServices = () => (
             lg={4}
             data-aos="fade-down"
             data-aos-delay="650"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Row className="pt-3">
               <Col>
@@ -282,7 +303,7 @@ const OurServices = () => (
             lg={4}
             data-aos="fade-down"
             data-aos-delay="950"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Row className="pt-3">
               <Col>
@@ -312,6 +333,19 @@ const OurServices = () => (
             </Row>
           </Col>
         </Row>
+        <Row>
+            <Col className="text-center mt-3">
+              <Button
+                variant="primary"
+                className="wiggle-button"
+                data-aos="fade-down"
+                data-aos-delay="1000"
+                data-aos-duration="800"
+              >
+                Claim free brand assessment
+              </Button>
+            </Col>
+          </Row>
       </Container>
     </section>
     <GetStarted />

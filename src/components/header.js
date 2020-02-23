@@ -33,7 +33,7 @@ const Header = () => {
   }
 
   return (
-    <Navbar className={isOnTop ? "" : "navbar-custom"} expand="lg" sticky="top">
+    <Navbar className={isOnTop ? "" : "navbar-custom"} expand="sm" sticky="top">
       <Container>
         <Navbar.Brand href="/">
           <Image src={isOnTop ? LogoDark : LogoDark} fluid />

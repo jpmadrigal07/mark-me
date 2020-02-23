@@ -201,22 +201,22 @@ const About = () => {
             <Col>
               <h1
                 className="text-center"
-                data-aos="fade-down"
+                data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
                 style={{
                   marginLeft: "150px",
                   marginRight: "150px",
                   fontWeight: "bold",
                 }}
               >
-                Exellency and Effciency.
+                The Digital Marksmen
               </h1>
               <p
                 className="text-center"
                 data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-delay="350"
+                data-aos-duration="800"
                 style={{ marginLeft: "150px", marginRight: "150px" }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -243,16 +243,20 @@ const About = () => {
 
       <section className="process-section" id="our-process" ref={myRef}>
         <Container>
-          <Row
-            data-aos="fade-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-          >
+          <Row>
             <Col>
-              <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
+              <h2 
+              style={{ textAlign: "center", fontWeight: "bold" }}
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="800">
                 Process & Timeline.
               </h2>
-              <p className="text-center" style={{ fontSize: "12px" }}>
+              <p 
+                className="text-center" style={{ fontSize: "12px" }}
+                data-aos="fade-left"
+                data-aos-delay="350"
+                data-aos-duration="800">
                 The process is the most important thing in a business.
               </p>
             </Col>
@@ -277,8 +281,8 @@ const About = () => {
           </Row>
           <Row
             data-aos="fade-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="650"
+            data-aos-duration="800"
             className="pb-5"
           >
             <Col>
@@ -294,8 +298,8 @@ const About = () => {
           </Row>
           <Row
             data-aos="fade-down"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="950"
+            data-aos-duration="800"
           >
             <Col>
               <Table striped bordered hover variant="dark">
@@ -333,7 +337,7 @@ const About = () => {
                 className="wiggle-button"
                 data-aos="fade-down"
                 data-aos-delay="1000"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 Claim free brand assessment
               </Button>
@@ -348,7 +352,7 @@ const About = () => {
             className="pb-2"
             data-aos="fade-down"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             <Col>
               <h1
@@ -370,13 +374,13 @@ const About = () => {
                 className="marksmen-image"
                 data-aos="fade-down"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
               <div
                 className="person-info"
                 data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <h3
                   className="text-center"
@@ -396,13 +400,13 @@ const About = () => {
                 className="marksmen-image"
                 data-aos="fade-down"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
               <div
                 className="person-info"
                 data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <h3
                   className="text-center"
@@ -422,13 +426,13 @@ const About = () => {
                 className="marksmen-image"
                 data-aos="fade-down"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
               <div
                 className="person-info"
                 data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <h3
                   className="text-center"
@@ -446,13 +450,13 @@ const About = () => {
                 className="marksmen-image"
                 data-aos="fade-down"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
               <div
                 className="person-info"
                 data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <h3
                   className="text-center"
@@ -470,13 +474,13 @@ const About = () => {
                 className="marksmen-image"
                 data-aos="fade-down"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
               <div
                 className="person-info"
                 data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <h3
                   className="text-center"
@@ -494,13 +498,13 @@ const About = () => {
                 className="marksmen-image"
                 data-aos="fade-down"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               />
               <div
                 className="person-info"
                 data-aos="fade-up"
                 data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <h3
                   className="text-center"

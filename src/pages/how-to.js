@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import Photography2 from "../images/photography.png"
 import GetStarted from "../components/get-started"
 
+import ProcessPoint from "../images/who-we-are-image.png"
+
 import {
   Container,
   Row,
@@ -24,7 +26,14 @@ const HowTo = () => (
       <Container>
         <Row>
           <Col>
-            <h2 style={{ textAlign: "center", fontWeight: "bold" }}>How To</h2>
+            <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
+              <Image
+                src={ProcessPoint}
+                fluid
+                style={{ fontWeight: "bold" }}
+              />{" "}
+              How To
+            </h2>
             <p style={{ fontSize: "12px", textAlign: "center" }}>
               Frequently asked questions
             </p>
@@ -39,7 +48,7 @@ const HowTo = () => (
             <Accordion
               data-aos="zoom-out-down"
               data-aos-delay="50"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               <Card>
                 <Card.Header>

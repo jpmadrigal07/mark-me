@@ -32,7 +32,7 @@ const WelcomeDesktop = () => {
               className="mt-3"
               data-aos="fade-down"
               data-aos-delay="50"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               We are <span style={{ color: "#7AE0BB" }}>MarkMe</span>
             </h1>
@@ -41,7 +41,7 @@ const WelcomeDesktop = () => {
               onSelect={handleSelect}
               data-aos="fade-down"
               data-aos-delay="500"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               <Carousel.Item>
                 <p style={{ height: "120px" }}>
@@ -71,7 +71,7 @@ const WelcomeDesktop = () => {
               className="welcome-button wiggle-button"
               data-aos="fade-down"
               data-aos-delay="1000"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               Claim free brand assessment
             </Button>
@@ -80,7 +80,7 @@ const WelcomeDesktop = () => {
             <div
               data-aos="fade-right"
               data-aos-delay="1500"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe

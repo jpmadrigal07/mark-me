@@ -7,9 +7,8 @@ import SEO from "../components/seo"
 import SamplePerson from "../images/sample-person.png"
 import GetStarted from "../components/get-started"
 import AboutHeaderImage from "../images/about-header-image.png"
-import ProcessPoint from "../images/process.png"
 
-import { Container, Row, Col, Image, Button, Nav, Table } from "react-bootstrap"
+import { Container, Row, Col, Image, Button, Table } from "react-bootstrap"
 
 import ReactApexChart from "react-apexcharts"
 

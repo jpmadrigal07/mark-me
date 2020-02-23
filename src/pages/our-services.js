@@ -4,16 +4,12 @@ import Layout from "../components/layout"
 import Line from "../components/hr"
 import SEO from "../components/seo"
 
-import Photography2 from "../images/photography.png"
 import GetStarted from "../components/get-started"
-
-import Video1 from "../images/video-1.png"
-import Image2 from "../images/image-2.png"
 
 import ProcessPoint from "../images/who-we-are-image.png"
 
 
-import { Container, Row, Col, Image, Button, Nav } from "react-bootstrap"
+import { Container, Row, Col, Image, Button } from "react-bootstrap"
 
 const OurServices = () => (
   <Layout>
@@ -67,6 +63,7 @@ const OurServices = () => (
                     style={{ padding: "56.25% 0 0 0", position: "relative" }}
                   >
                     <iframe
+                      title="Sample Video"
                       src="https://player.vimeo.com/video/128675400?color=7AE0BB&title=0&byline=0&portrait=0"
                       style={{
                         position: "absolute",
@@ -115,6 +112,7 @@ const OurServices = () => (
                     style={{ padding: "56.25% 0 0 0", position: "relative" }}
                   >
                     <iframe
+                      title="Sample Video"
                       src="https://player.vimeo.com/video/128675400?color=7AE0BB&title=0&byline=0&portrait=0"
                       style={{
                         position: "absolute",
@@ -163,6 +161,7 @@ const OurServices = () => (
                     style={{ padding: "56.25% 0 0 0", position: "relative" }}
                   >
                     <iframe
+                      title="Sample Video"
                       src="https://player.vimeo.com/video/128675400?color=7AE0BB&title=0&byline=0&portrait=0"
                       style={{
                         position: "absolute",

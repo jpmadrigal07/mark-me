@@ -1,6 +1,5 @@
-import React, { useLayoutEffect, useState } from "react"
+import React, { useState } from "react"
 import {
-  ResponsiveEmbed,
   Carousel,
   Row,
   Col,
@@ -84,6 +83,7 @@ const WelcomeDesktop = () => {
             >
               <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                 <iframe
+                  title="Welcome"
                   src="https://player.vimeo.com/video/233586784?autoplay=1&color=7AE0BB&title=0&byline=0&portrait=0"
                   style={{
                     position: "absolute",

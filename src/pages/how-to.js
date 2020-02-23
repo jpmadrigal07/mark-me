@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Line from "../components/hr"
 import SEO from "../components/seo"
 
-import Photography2 from "../images/photography.png"
 import GetStarted from "../components/get-started"
 
 import ProcessPoint from "../images/who-we-are-image.png"

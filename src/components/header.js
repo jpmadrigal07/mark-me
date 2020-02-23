@@ -1,7 +1,6 @@
 import { Navbar, Nav, Button, Container, Image } from "react-bootstrap"
 import React, { useState, useEffect } from "react"
 import throttle from "lodash.throttle"
-import LogoLight from "../images/markme-logo-light.png"
 import LogoDark from "../images/markme-logo-dark.png"
 import FA from "react-fontawesome"
 

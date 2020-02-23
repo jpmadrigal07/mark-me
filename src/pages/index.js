@@ -7,21 +7,7 @@ import WelcomeDesktop from "../components/welcome-desktop"
 import WelcomeMobile from "../components/welcome-mobile"
 import GetStarted from "../components/get-started"
 
-import Videos from "../images/videos-services.png"
-import Photography from "../images/photography-services.png"
-import Photography2 from "../images/photography.png"
 import ProcessPoint from "../images/who-we-are-image.png"
-
-import PhotoIcon from "../images/photo-icon.png"
-import CameraIcon from "../images/camera-icon.png"
-
-import Video1 from "../images/video-1.png"
-import Video2 from "../images/video-2.png"
-import Video3 from "../images/video-3.png"
-
-import Image1 from "../images/image-1.png"
-import Image2 from "../images/image-2.png"
-import Image3 from "../images/image-3.png"
 
 import Expand from "react-expand-animated"
 
@@ -39,12 +25,6 @@ const IndexPage = () => {
   }
 
   const transitions = ["height", "opacity", "background"]
-
-  const handleClickWhyUs = () => {
-    if (typeof window !== "undefined") {
-      window.location = "/why-us"
-    }
-  }
 
   const handleClickOurServices = () => {
     if (typeof window !== "undefined") {
@@ -193,6 +173,7 @@ const IndexPage = () => {
                     style={{ padding: "56.25% 0 0 0", position: "relative" }}
                   >
                     <iframe
+                      title="Sample Video"
                       src="https://player.vimeo.com/video/128675400?color=7AE0BB&title=0&byline=0&portrait=0"
                       style={{
                         position: "absolute",

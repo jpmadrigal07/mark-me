@@ -13,7 +13,7 @@ import GetStarted from "../components/get-started"
 
 import ProcessPoint from "../images/who-we-are-image.png"
 
-import { Container, Row, Col, Image, Button, Nav } from "react-bootstrap"
+import { Container, Row, Col, Image, Button } from "react-bootstrap"
 
 const WhyUs = () => (
   <Layout>

@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 import Line from "../components/hr"
 import SEO from "../components/seo"
 
-import GetStarted from "../components/get-started"
-
 import { Container, Row, Col, Image } from "react-bootstrap"
 
 import ProcessPoint from "../images/who-we-are-image.png"
